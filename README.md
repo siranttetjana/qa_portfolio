@@ -1,13 +1,13 @@
 # QA Portfolio | Tetiana Sirant
 
 Welcome to my Junior QA Portfolio.  
-This repository contains practical testing materials that demonstrate my skills in manual testing, bug reporting, test documentation, and quality assurance fundamentals.
+This repository contains practical QA materials that demonstrate my skills in manual testing, bug reporting, test documentation, and quality assurance fundamentals.
 
 ---
 
 ## About Me
 
-Motivated and detail-oriented Junior QA Engineer focused on delivering high-quality user experience through structured testing and continuous learning.
+Motivated and detail-oriented Junior QA Engineer focused on delivering high-quality products through structured testing and continuous learning.
 
 I am actively developing practical QA skills and building a portfolio based on real testing scenarios.
 
@@ -45,14 +45,24 @@ I am actively developing practical QA skills and building a portfolio based on r
 
 ## Portfolio Contents
 
+- [Bug Reports](./Bug-Reports.md)
+- [Test Cases](./Test-Cases.md)
+- [Checklists](./Checklists.md)
+- [API Testing](./API-Testing.md)
+- [SQL Practice](./SQL-Practice.md)
+
+---
+
+## Featured Work
+
 ### Bug Reports
-Examples of UI and functional defects with severity, priority, reproduction steps, expected and actual results.
+Sample defects with severity, priority, reproduction steps, expected and actual results.
 
 ### Test Cases
 Positive, negative, and edge-case scenarios for web applications.
 
 ### Checklists
-Smoke and regression checklists for key features.
+Smoke and regression testing checklists.
 
 ### API Testing
 Basic REST API testing using Postman.
