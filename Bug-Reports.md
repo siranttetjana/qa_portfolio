@@ -42,6 +42,10 @@ Grand Total should be equal to Cart Subtotal + Shipping
 ### Actual Result
 Grand Total is calculated incorrectly
 
+### Screenshot
+
+![Grand Total Bug](./images/bug-002-total.png)
+
 ### Notes
 This issue affects the final order amount
 
@@ -64,6 +68,10 @@ Product price and currency should update according to selected option
 
 ### Actual Result
 Price and currency remain unchanged
+### Screenshot
+
+![Change currency](./images/bug-003-currency.png)
+
 
 ### Notes
 User may see incorrect pricing information
