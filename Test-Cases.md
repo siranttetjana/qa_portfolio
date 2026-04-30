@@ -1,6 +1,6 @@
 # Test Cases
 
-This document contains test cases for e-commerce cart functionality, including positive, negative, and edge scenarios.
+This document contains test cases for e-commerce cart functionality, including positive and negative test scenarios.
 
 ---
 
