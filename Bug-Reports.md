@@ -16,7 +16,7 @@ This document contains sample bug reports created during testing practice.
 2. Observe the second product card "Dark Grey Jeans"
 
 ### Expected Result
-All product cards have same height and alignment
+All product cards have the same size and alignment
 
 ### Actual Result
 The second product card has a smaller height than the others
@@ -37,7 +37,7 @@ The second product card has a smaller height than the others
 4. Check the "Grand Total"
 
 ### Expected Result
-Grand Total should be equal to Cart Subtotal + Shipping
+Grand Total should equal Cart Subtotal plus Shipping
 
 ### Actual Result
 Grand Total is calculated incorrectly
@@ -113,7 +113,7 @@ Sign In button overlaps the footer
 5. Navigate to Billing Address section
 
 ### Expected Result
-The Billing Address section shows appropriate info
+Billing Address section does not load correctly or displays incorrect data
 
 ### Actual Result
 The Billing Address section loads infinitely
