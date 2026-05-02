@@ -47,7 +47,7 @@ I am actively developing practical QA skills and building a portfolio based on r
 
 - [Bug Reports](./Bug-Reports.md)
 - [Test Cases](./Test-Cases.md)
-- [Checklists](./Checklist.xlsx)
+- [Checklists](./Checklist.md)
 - [API Testing](./API-Testing.md)
 - [SQL Practice](./SQL-Practice.md)
 
