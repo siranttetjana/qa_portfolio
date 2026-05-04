@@ -20,8 +20,12 @@ The goal is to:
 * Pairwaise testing
 * State Transition diagram
 * Error Guessing
+ ---
 
+## 🔗 Test design techniques File
+In this file you can see examples of direct application of test design techniques in software testing.
 
+👉 (https://github.com/siranttetjana/qa_portfolio/blob/main/Test_Design.pdf)
 
 
 ---
