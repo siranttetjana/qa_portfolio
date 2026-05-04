@@ -71,12 +71,8 @@ Relationships:
 ## 🔗 SQL File
 
 You can view the full SQL queries here:
-👉 (add your file link here if you upload it to Google Drive / GitHub)
+👉 (https://github.com/siranttetjana/qa_portfolio/blob/main/SQL_queries.pdf)
 
-## 📝 Notes
 
-* Queries were written for learning and practice purposes
-* Database simulates a real-world hotel booking system
-* Some queries may vary slightly depending on SQL dialect (MySQL, SQL Server, etc.)
 
 ---
