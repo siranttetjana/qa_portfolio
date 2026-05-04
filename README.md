@@ -96,5 +96,5 @@ Queries for data validation and database testing basics.
 
 ## Contact
 
-LinkedIn: linkedin.com/in/tetiana-sirant
-Email: tatiana.sirant101@gmail.com
+- LinkedIn: linkedin.com/in/tetiana-sirant
+- Email: tatiana.sirant101@gmail.com
