@@ -48,6 +48,7 @@ I am actively developing practical QA skills and building a portfolio based on r
 - [Bug Reports](./Bug-Reports.md)
 - [Test Cases](./Test-Cases.md)
 - [Checklists](./Checklist.md)
+- [Test design techniques](./Test_Design.md)
 - [API Testing](./API-Testing.md)
 - [SQL Practice](./SQL-Practice.md)
 
@@ -63,6 +64,9 @@ Positive, negative, and edge-case scenarios for web applications.
 
 ### Checklists
 Smoke and regression testing checklists.
+
+### Test design techniques
+Using test design techniques in practice.
 
 ### API Testing
 Basic REST API testing using Postman.
