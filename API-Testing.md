@@ -86,7 +86,7 @@ pm.test("Status code is 200", function () {
 ## 🔗 File with Requests
 
 You can view the full Postman collection here:
-👉 (add your PDF / Postman link)
+👉 https://github.com/siranttetjana/qa_portfolio/blob/main/Postman_petstore.pdf
 
 ---
 
