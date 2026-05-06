@@ -64,5 +64,5 @@ Basic API testing using Swagger Petstore with CRUD operations.
 
 ## 📬 Contact
 
-- LinkedIn: (add your link here)
-- Email: (add your email here)
+- LinkedIn: linkedin.com/in/tetiana-sirant
+- Email: tetiana.sirant@gmail.com
