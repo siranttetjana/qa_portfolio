@@ -2,9 +2,9 @@
 
 ## 📌 Overview
 
-This document demonstrates API testing using the **Swagger Petstore API** in Postman.
+This project demonstrates API testing using the **Swagger Petstore API** in Postman.
 
-The collection includes basic CRUD operations and examples of working with API requests and responses.
+The goal was to practice CRUD operations, validate API responses, and test both positive and negative scenarios.
 
 ---
 
@@ -15,36 +15,58 @@ The collection includes basic CRUD operations and examples of working with API r
 
 ---
 
-## 📂 Scope of Testing
+## 📂 Tested Endpoints
 
-The following API operations were tested:
+### 🔹 GET – Find pet by status
 
-* **GET** – Find pets by status
-* **POST** – Add a new pet
-* **PUT** – Update an existing pet
-* **DELETE** – Delete a pet
-
-Each request includes:
-
-* Parameters
-* Headers
-* Request body (where applicable)
-* Example responses
+* **Scenario:** Positive
+* Used query parameters
+* **Result:** 200 OK
 
 ---
 
-## 🧪 Test Approach
+### 🔹 POST – Add a new pet (valid data)
 
-During testing, the following aspects were validated:
+* **Scenario:** Positive
+* Used variable `{{url}}`
+* **Result:** 200 OK
 
-* Correct status codes (e.g., 200 OK)
-* API response structure
-* Data returned in response body
-* Basic request execution in Postman
+---
 
-Example test validation:
+### 🔹 POST – Add a new pet (missing required fields)
 
-```javascript id="z8ydfr"
+* **Scenario:** Negative
+* Sent invalid data (missing required fields)
+* **Result:** 400 Bad Request
+* Validation scripts were used
+
+---
+
+### 🔹 PUT – Update a pet
+
+* **Scenario:** Positive
+* **Result:** 200 OK
+
+---
+
+### 🔹 DELETE – Delete a pet
+
+* **Scenario:** Positive
+* **Result:** 200 OK
+
+---
+
+## 🧪 Validation
+
+During testing, the following checks were performed:
+
+* Status code validation (200, 400)
+* Response structure validation
+* Basic response validation using Postman test scripts
+
+Example:
+
+```javascript id="k0c6q7"
 pm.test("Status code is 200", function () {
     pm.response.to.have.status(200);
 });
@@ -52,20 +74,35 @@ pm.test("Status code is 200", function () {
 
 ---
 
+## 🧠 Key Learnings
+
+* Practiced working with API endpoints using different HTTP methods
+* Implemented both positive and negative testing scenarios
+* Used Postman scripts for response validation
+* Identified that API may return non-informative error messages (e.g., "bad input")
+
+---
+
 ## 🔗 File with Requests
 
-You can view the Postman collection here:
-👉 (add your PDF or Postman link here)
+You can view the full Postman collection here:
+👉 (add your PDF / Postman link)
 
 ---
 
 ## 📝 Notes
 
 * This project demonstrates basic API testing skills
-* Focus is on understanding request/response flow
-* Additional test scenarios (negative and edge cases) can be added in future iterations
+* Focus is on understanding API request/response behavior
+* Can be extended with additional test scenarios and validations
 
 ---
 
+## 🚀 Future Improvements
 
+* Add chained requests (POST → GET validation)
+* Use environment variables for dynamic data
+* Add more negative and edge test cases
+* Improve response validation (schema checks)
 
+---
