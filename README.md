@@ -34,16 +34,15 @@ Test cases for e-commerce cart functionality, covering positive and negative sce
 ### 📋 Checklists
 Structured checklist for registration form testing (UI, validation, functional behavior).
 
-👉 [View Checklist](./Checklists.md)
+👉 [View Checklist](./Checklist.md)
 
-📎 [Download Excel version](./registration-checklist.xlsx)
 
 ---
 
 ### 🗄️ Database Testing (SQL)
 SQL queries used for validating data integrity, relationships, and calculations.
 
-👉 [View SQL Practice](./Database-Testing.md)
+👉 [View SQL Practice](./SQL-Practice.md)
 
 ---
 
