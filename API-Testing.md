@@ -1,108 +1,31 @@
-# 🔗 API Testing – Swagger Petstore (Postman)
+## 🚀 Postman API Testing — Swagger Petstore (CRUD & Request Chaining)
 
-## 📌 Overview
+Автоматизований тестовий набір у Postman для перевірки REST API сервісу Swagger Petstore. Проєкт демонструє побудову повного CRUD-циклу, генерацію динамічних тестових даних та зв'язування запитів.
 
-This project demonstrates API testing using the **Swagger Petstore API** in Postman.
-
-The goal was to practice CRUD operations, validate API responses, and test both positive and negative scenarios.
-
----
-
-## 🛠️ Tools
-
-* Postman
-* Swagger Petstore API
+### 📌 Ключові особливості та реалізований функціонал:
+* **CRUD Cycle Coverage:** Реалізовано повний цикл операцій (`POST`, `GET`, `PUT`, `DELETE`) для сутності `Pet`.
+* **Pre-request Scripts:** Автоматична генерація унікальних тестових даних (`petId`, `petName`) перед відправкою запиту (`Math.random()`) для запобігання дублюванню даних у БД.
+* **Request Chaining:** Передача динамічного `petId` між запитами за допомогою глобальних змінних Postman (`pm.globals.set` / `{{petId}}`).
+* **Post-response Assertions:** Автоматичні перевірки (Status Codes 200/404, перевірка структури та значень полів у JSON-відповіді).
+* **Negative Testing:** Перевірка обробки помилок сервером (статус `404 Not Found` після видалення об'єкта).
+* **Automated Execution:** Повний запуск усієї тестової сюїти в один клік через **Collection Runner**.
 
 ---
 
-## 📂 Tested Endpoints
+### 🛠 Структура тестового сценарію (Test Suite Workflow)
 
-### 🔹 GET – Find pet by status
-
-* **Scenario:** Positive
-* Used query parameters
-* **Result:** 200 OK
-
----
-
-### 🔹 POST – Add a new pet (valid data)
-
-* **Scenario:** Positive
-* Used variable `{{url}}`
-* **Result:** 200 OK
+1. `POST /pet` — Створення нової тваринки з динамічним `petId` та `petName` (**Before request script** + перевірка status code 200 та імені у відповіді).
+2. `GET /pet/{petId}` — Отримання даних створеної тваринки за допомогою **Request Chaining** (`{{petId}}`).
+3. `PUT /pet` — Оновлення імені на `"Barsik Super"` та статусу на `"sold"` (перевірка збігу оновлених полів у JSON).
+4. `DELETE /pet/{petId}` — Видалення об'єкта за `{{petId}}` (перевірка успішного статусу 200).
+5. `GET /pet/{petId}` — Перевірка негативного сценарію (підтвердження видалення об'єкта зі статусом `404 Not Found`).
 
 ---
 
-### 🔹 POST – Add a new pet (missing required fields)
+### 📁 Як запустити колекцію локально:
 
-* **Scenario:** Negative
-* Sent invalid data (missing required fields)
-* **Result:** 400 Bad Request
-* Validation scripts were used
-
----
-
-### 🔹 PUT – Update a pet
-
-* **Scenario:** Positive
-* **Result:** 200 OK
-
----
-
-### 🔹 DELETE – Delete a pet
-
-* **Scenario:** Positive
-* **Result:** 200 OK
-
----
-
-## 🧪 Validation
-
-During testing, the following checks were performed:
-
-* Status code validation (200, 400)
-* Response structure validation
-* Basic response validation using Postman test scripts
-
-Example:
-
-```javascript id="k0c6q7"
-pm.test("Status code is 200", function () {
-    pm.response.to.have.status(200);
-});
-```
-
----
-
-## 🧠 Key Learnings
-
-* Practiced working with API endpoints using different HTTP methods
-* Implemented both positive and negative testing scenarios
-* Used Postman scripts for response validation
-* Identified that API may return non-informative error messages (e.g., "bad input")
-
----
-
-## 🔗 File with Requests
-
-You can view the full Postman collection here:
-👉 https://github.com/siranttetjana/qa_portfolio/blob/main/Postman_petstore.pdf
-
----
-
-## 📝 Notes
-
-* This project demonstrates basic API testing skills
-* Focus is on understanding API request/response behavior
-* Can be extended with additional test scenarios and validations
-
----
-
-## 🚀 Future Improvements
-
-* Add chained requests (POST → GET validation)
-* Use environment variables for dynamic data
-* Add more negative and edge test cases
-* Improve response validation (schema checks)
-
----
+1. Завантажте файл [Petstore CRUD Tests.postman_collection.json](./Petstore%20CRUD%20Tests.postman_collection.json) з цього репозиторію.
+2. Відкрийте **Postman** та натисніть кнопку **Import** (у лівому верхньому кутку).
+3. Оберіть завантажений `.json` файл.
+4. Клацніть на **`...`** біля назви колекції `Petstore CRUD Tests` ➔ виберіть **Run collection**.
+5. Натисніть **Run Petstore CRUD Tests** для автоматичного запуску всіх тестів.
